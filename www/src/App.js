@@ -17,6 +17,9 @@ function App() {
         >
           Learn React
         </a>
+        <div>
+        <small>API URL Ingested from Layer 3: <b>{process.env.REACT_APP_API_URL}</b>.</small>
+        </div>
       </header>
     </div>
   );
