@@ -1,6 +1,6 @@
 data "aws_route53_zone" "zone" {
   # provider = aws.use_default_region
-  name = "aiaiproject.org"
+  name = "johndawes.net"
   private_zone = false
 }
 
