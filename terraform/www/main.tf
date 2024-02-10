@@ -71,7 +71,7 @@ resource "aws_s3_bucket_policy" "www" {
 
 # Directory Upload 
 locals {
-  www_asset_filepath = "${path.module}/../../www/dist"
+  www_asset_filepath = "${path.module}/../../www/build"
 }
 
 module "template_files" {
