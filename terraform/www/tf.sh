@@ -60,7 +60,7 @@ case $1 in
   env)
     # Extract API URL state that was passed through outputs
     terraform refresh
-    API_URL=$(terraform show -json | echo "VITE_API_URL=$(jq -r '.values.outputs.api_base_url.value')")
+    API_URL=$(terraform show -json | echo "REACT_APP_API_URL=$(jq -r '.values.outputs.api_base_url.value')")
     [  -z "$API_URL" ] &&  exit 1 || echo $API_URL > ../../www/.env
     echo $API_URL
     jq --version
