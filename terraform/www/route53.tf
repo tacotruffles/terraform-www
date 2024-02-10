@@ -25,7 +25,7 @@ resource "aws_route53_record" "cert_validation" {
 resource "aws_route53_record" "stage" {
   count = var.stage == "stage" ? 1 : 0
   zone_id = data.aws_route53_zone.zone.id
-  name = "stage.aiaiproject.org"
+  name = "stage.johndawes.net"
   type = "A"
 
   alias {
@@ -38,7 +38,7 @@ resource "aws_route53_record" "stage" {
 resource "aws_route53_record" "apex" {
   count = var.stage == "prod" ? 1 : 0
   zone_id = data.aws_route53_zone.zone.id
-  name = "aiaiproject.org"
+  name = "johndawes.net"
   type = "A"
 
   alias {
@@ -51,7 +51,7 @@ resource "aws_route53_record" "apex" {
 resource "aws_route53_record" "www" {
   count = var.stage == "prod" ? 1 : 0
   zone_id = data.aws_route53_zone.zone.id
-  name = "www.aiaiproject.org"
+  name = "www.johndawes.net"
   type = "A"
 
   alias {
