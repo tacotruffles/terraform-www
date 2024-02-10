@@ -24,7 +24,7 @@ resource "aws_cloudfront_distribution" "www" {
   # Keep CDN in US and CA instead of global
   price_class = "PriceClass_200"
 
-  aliases = var.stage == "stage" ? ["stage.aiaiproject.org"] : ["aiaiproject.org","www.aiaiproject.org"]
+  aliases = var.stage == "stage" ? ["stage.johndawes.net"] : ["johndawes.net","www.johndawes.net"]
 
   default_cache_behavior {
     min_ttl = 0
