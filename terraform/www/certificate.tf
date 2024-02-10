@@ -1,8 +1,8 @@
 #AMC Certificate resource with domain name, DNS validation, and alternative names
 resource "aws_acm_certificate" "cert" {
-  domain_name = var.stage == "stage" ? "stage.aiaiproject.org" : "aiaiproject.org"
+  domain_name = var.stage == "stage" ? "stage.johndawes.net" : "johndawes.net"
   validation_method = "DNS"
-  subject_alternative_names = var.stage == "stage" ? [] : ["*.aiaiproject.org"]
+  subject_alternative_names = var.stage == "stage" ? [] : ["*.johndawes.net"]
 
   lifecycle {
     create_before_destroy = true
