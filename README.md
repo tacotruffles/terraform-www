@@ -1,4 +1,4 @@
-# Configure and Stand Up WWW
+# Layer 4: Configure and Stand Up React WWW
 
 ## Pattern
 
